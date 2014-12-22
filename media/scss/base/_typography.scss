@@ -1,0 +1,9 @@
+.wf-loading {  // fonts are loading
+  //TODO: activate this - display: none;
+}
+.wf-inactive {  // fonts have failed to load
+  body::before {
+    content: "It seems that the chosen fonts for this page have failed to load. You should still be able to use the website, but please keep in mind that this is not the intended design.";
+    font-size: $small-font-size;
+  }
+}

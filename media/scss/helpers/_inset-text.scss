@@ -1,0 +1,15 @@
+@mixin inset-text {
+  position: relative;
+  &::before, &::after {
+    content: attr(title);
+    position: absolute;
+    color: rgba(255,255,255,.16)
+  }
+  &::before { top: 2px; left: 1px; }
+  &::after { top: 3px; left: 2px; }
+}
+@mixin inset-text-simple {
+  text-shadow:
+  -1px -1px 0 #000,  // top 'edge'
+  1px 1px 0 #FFF;  // bottom 'edge'
+}

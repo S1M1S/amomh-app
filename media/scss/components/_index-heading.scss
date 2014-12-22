@@ -1,0 +1,16 @@
+div#index-heading-container {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0,0,0,.8);
+  @media #{$medium-up} {
+    padding: 0 12.5%;
+  }
+}
+h1#index-heading {
+  @include v-align-middle;
+  color: $black;
+  span {
+    @include inset-text;
+  }
+}

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content="Web Design and Music Production">
+    <meta name='keywords' content="web design, web, design, studio, production, producer, music, creative">
+    <title>{% block title %}Many Hats Studio{% endblock %}</title>
+    <link rel="stylesheet" href="/media/css/slabtext.css">
+    <link rel="stylesheet" href="/media/css/app.css">
+    {% block style %}{% endblock %}
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js"></script>
+    <script src="/media/js/loadfonts.js"></script>
+    <script src="/media/bower_components/modernizr/modernizr.js"></script>
+</head>
+<body>
+{% block markup %}{% endblock %}
+</body>
+<script src="/media/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script> -->
+<script src="/media/bower_components/foundation/js/foundation.min.js"></script>
+<script src="/media/js/jquery.slabtext.js"></script>
+<script src="/media/js/app.js"></script>
+{% block script %}{% endblock %}
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block markup %}
+    <header class="fixed">
+        <nav class="top-bar" role="navigation" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1>
+                        <a href={% block sectionindex %}"/CHANGELINK"{% endblock %}>
+                            {% block sectiontitle %}CHANGETITLE{% endblock %}
+                        </a>
+                    </h1>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+{% endblock %}

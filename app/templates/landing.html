@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block markup %}
+    <div class="off-canvas-wrap" data-offcanvas>
+        <div class="inner-wrap">
+            <nav class="tab-bar landing-bar-top">
+                <section class="right-small">
+                    <a class="right-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                </section>
+            </nav>
+            <aside class="right-off-canvas-menu">
+                <ul class="off-canvas-list">
+                    <li><a href="/website-design">Website Design</a></li>
+                    <li><a href="/bar">Music Production</a></li>
+                    <li><a href="/foobar">Internet Radio</a></li>
+                </ul>
+            </aside>
+            <div id="index-heading-container">
+                <h1 id="index-heading">Many Hats Studio</h1>
+            </div>
+            <div class="landing-bar-bottom"></div>
+            <a class="exit-off-canvas"></a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script>
+        $(document)
+                .on("fontActive",   function() {$("h1#index-heading").slabText();})
+                .on("resize",       function() {fitHeaderContainer();})
+                .ready(function() {
+                    fitHeaderContainer();
+                });
+        function fitHeaderContainer() {
+            $("div#index-heading-container").height($(window).height() - $(".tab-bar").height() * 2)
+        }
+    </script>
+{% endblock %}
