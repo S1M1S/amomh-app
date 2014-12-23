@@ -1,1 +1,54 @@
-{% extends "base-article-page.html" %}
+{% extends "base-website-design.html" %}
+
+{% block content %}
+    <div class="row">
+        <header>
+            <h1>Contact Me</h1>
+        </header>
+        <section>
+            <header><h3>Get a Quote</h3></header>
+            <form>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label>Your Name or Company Name:
+                            <input type="text" placeholder="Alex Doe / Many Hats Website Design">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label>Website Systems:
+                            <textarea placeholder="eg. Purely informational / Users can sign up to receive newsletters / Users can make item listings and must pay subscription fee etc."></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <label>Project Priority:
+                            <select>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section>
+            <header><h3>My Details</h3></header>
+            <article>
+                <ul>
+                    <li>Phone: 0425005527</li>
+                    <li>Email: web-design@manyhatsstudio.com.au</li>
+                    <li>Github: S1M1S</li>
+                </ul>
+            </article>
+        </section>
+    </div>
+{% endblock %}

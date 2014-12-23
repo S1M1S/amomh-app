@@ -4,6 +4,6 @@ WebFont.load({
         document.dispatchEvent(FontActiveEvent);
     },
     google: {
-        families: ['Open Sans:400,700', 'Open Sans Condensed:300,700']
+        families: ['Open Sans:400,700', 'Open Sans Condensed:300']
     }
 });

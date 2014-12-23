@@ -10,28 +10,28 @@ def home():
 
 @route('/website-design/information')
 def website_design():
-    return template('website_design/information.html')
+    return template('website-design/information.html')
 
 @route('/website-design/portfolio')
 def website_design():
-    return template('website_design/portfolio.html')
+    return template('website-design/portfolio.html')
 
 @route('/website-design/quote-estimates')
 def website_design():
-    return template('website_design/quote-estimates.html')
+    return template('website-design/quote-estimates.html')
 
 @route('/website-design/contact-me')
 def website_design():
-    return template('website_design/contact-me.html')
+    return template('website-design/contact-me.html')
 
 @route('/internet-radio/information')
 def website_design():
-    return template('internet_radio/information.html')
+    return template('internet-radio/information.html')
 
 @route('/internet-radio/listen')
 def website_design():
-    return template('internet_radio/listen.html')
+    return template('internet-radio/listen.html')
 
 @route('/music-production/information')
 def website_design():
-    return template('music_production/information.html')
+    return template('music-production/information.html')
