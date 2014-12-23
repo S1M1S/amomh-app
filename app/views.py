@@ -16,6 +16,10 @@ def website_design():
 def website_design():
     return template('website_design/portfolio.html')
 
+@route('/website-design/quote-estimates')
+def website_design():
+    return template('website_design/quote-estimates.html')
+
 @route('/website-design/contact-me')
 def website_design():
     return template('website_design/contact-me.html')
