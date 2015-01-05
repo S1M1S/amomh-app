@@ -12,9 +12,22 @@
                     </h1>
                 </li>
             </ul>
+            <section class="top-bar-section">
+                {% block navbar %}{% endblock %}
+            </section>
         </nav>
     </header>
     <main>
         {% block content %}{% endblock %}
     </main>
+    <footer>
+        <nav>
+            <ul class="inline-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/website-design/information">Website Design</a></li>
+                <li><a href="/internet-radio/information">Internet Radio</a></li>
+                <li><a href="/music-production/information">Music Production</a></li>
+            </ul>
+        </nav>
+    </footer>
 {% endblock %}
