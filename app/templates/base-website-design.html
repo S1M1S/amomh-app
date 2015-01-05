@@ -1,3 +1,18 @@
 {% extends "base-article.html" %}
 {% block sectionindex %}"/website-design/information"{% endblock %}
 {% block sectiontitle %}Many Hats Website Design{% endblock %}
+
+{% block navbar %}
+    <ul class="right">
+        <li class="has-dropdown">
+            <a href="information">Website Design</a>
+            <ul class="dropdown">
+                <li><a href="information">Information</a></li>
+                <li><a href="portfolio">Portfolio</a></li>
+                <li><a href="quote-estimates">Quote Estimates</a></li>
+                <li><a href="contact-me">Contact Me</a></li>
+            </ul>
+        </li>
+        <li><a href="/">Back to Landing Page</a></li>
+    </ul>
+{% endblock %}
