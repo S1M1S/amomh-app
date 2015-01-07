@@ -42,15 +42,18 @@
 @import
   "helpers/dimensions",
   "helpers/inset-text",
-"helpers/text-wrap",
+  "helpers/text-wrap",
   "helpers/align";
 
-@import "base/typography",
-"base/foundation-icons";
+@import
+  "base/typography",
+  "base/foundation-icons";
 
-@import "components/subheader",
-"components/landing-bar",
-"components/index-heading",
-"components/information-block-list";
+@import
+  "components/subheader",
+  "components/landing-bar",
+  "components/index-heading",
+  "components/site-footer",
+  "components/information-block-list";
 @import
   "layout/body";
