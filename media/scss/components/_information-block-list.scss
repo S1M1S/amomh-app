@@ -1,0 +1,10 @@
+.information-block-list {
+  @include grid-row($behavior: nest);
+  li {
+    @include grid-column(12);
+    margin-bottom: 1.25rem;
+    @media #{$medium-up} {
+      @include grid-column(6);
+    }
+  }
+}

@@ -1,4 +1,4 @@
-from bottle import TEMPLATE_PATH, route, jinja2_template as template
+from bottle import TEMPLATE_PATH, route, static_file, jinja2_template as template
 
 TEMPLATE_PATH.append('./app/templates')
 
@@ -42,3 +42,8 @@ def website_design():
 @route('/music-production/information')
 def website_design():
     return template('music-production/information.html')
+
+
+@route('/media/<path:path>')
+def static_media(path):
+    return static_file(path)

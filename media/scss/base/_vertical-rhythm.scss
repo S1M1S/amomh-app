@@ -1,0 +1,52 @@
+@import "compass/typography/vertical_rhythm";
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+$font-size-tiny: 13px;
+$font-size-large: 20px;
+$font-size-larger: 36px;
+$font-size-largest: 42px;
+
+@include establish-baseline();
+
+body {
+  @include debug-vertical-alignment();
+}
+
+h1 {
+  @include adjust-font-size-to($font-size-largest);
+}
+
+h2 {
+  @include adjust-font-size-to($font-size-larger);
+}
+
+h3 {
+  @include adjust-font-size-to($font-size-large);
+}
+
+h1, h2, h3 {
+  margin-top: rhythm(1);
+  margin-bottom: rhythm(2);
+}
+
+p {
+  margin-bottom: rhythm(1)
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+.f-topbar-fixed {
+  padding-top: rhythm(2);
+}
+
+nav.top-bar {
+  height: rhythm(2);
+  line-height: rhythm(2);
+  * {
+    line-height: inherit !important;
+  }
+}

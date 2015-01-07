@@ -17,6 +17,9 @@ handlers:
 - url: /js
   static_dir: media/js
 
+- url: /fonts
+  static_dir: media/fonts
+
 - url: .*
   script: main.py
 
