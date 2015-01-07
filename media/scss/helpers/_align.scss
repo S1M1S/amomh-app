@@ -3,6 +3,7 @@
   top:50%;
   transform: translateY(-50%);
 }
+.v-align-middle { @include v-align-middle; }
 @mixin h-align-middle {
   margin-left: auto;
   margin-right: auto;

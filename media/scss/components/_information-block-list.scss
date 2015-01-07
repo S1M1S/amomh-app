@@ -1,10 +1,52 @@
 .information-block-list {
-  @include grid-row($behavior: nest);
-  li {
+  @include block-grid(1);
+  @media #{$medium-up} {
+    @include block-grid(2);
+  }
+}
+//.information-block-list {
+//  @include grid-row($behavior: nest);
+//  li {
+//    @include grid-column(12);
+//    margin-bottom: 1.25rem;
+//    @media #{$medium-up} {
+//      @include grid-column(6);
+//    }
+//  }
+//}
+.portfolio-block-list {
+  @extend .information-block-list;
+  a {
+    display: block;
+    @include grid-row($behavior: nest);
+  }
+  header {
+    min-height: 30px;
+    position: relative;
     @include grid-column(12);
-    margin-bottom: 1.25rem;
     @media #{$medium-up} {
       @include grid-column(6);
+    }
+    h3 {
+      text-align: center;
+    }
+  }
+  figure {
+    margin: 0;
+    text-align: center;
+    @include grid-column(12);
+    @media #{$medium-up} {
+      @include grid-column(6);
+    }
+  }
+  div.table-container {
+    @include grid-column(12);
+    table {
+      width: 100%;
+      margin-top: 1.25rem;
+      @media #{$medium-up} {
+        margin-bottom: 0;
+      }
     }
   }
 }
