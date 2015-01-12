@@ -1,13 +1,14 @@
 {% extends "base-website-design.html" %}
 
 {% block content %}
-    <div class="row">
-        <header>
-            <h1>Contact Me</h1>
-        </header>
-        <section>
-            <header><h3>Get a Quote</h3></header>
-            <form>
+    <header class="small-12 columns">
+        <h1>Contact Me</h1>
+    </header>
+    <hr>
+    <section class="small-12 columns">
+        <div class="row">
+            <header class="small-12 columns"><h3>Get a Quote</h3></header>
+            <form class="small-12 columns">
                 <div class="row">
                     <div class="small-12 columns">
                         <label>Your Name or Company Name:
@@ -34,21 +35,25 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="small-12 columns">
-                        <button type="submit">Submit</button>
+                    <div class="small-12 columns text-center">
+                    <button type="submit">Submit</button>
                     </div>
                 </div>
             </form>
-        </section>
-        <section>
-            <header><h3>My Details</h3></header>
-            <article>
-                <ul>
-                    <li>Phone: 0425005527</li>
-                    <li>Email: web-design@manyhatsstudio.com.au</li>
-                    <li>Github: S1M1S</li>
+        </div>
+    </section>
+    <hr>
+    <section class="small-12 columns">
+        <div class="row">
+            <header class="small-12 columns"><h3>My Details</h3></header>
+            <article class="small-12 columns text-center">
+                <ul class="vcard">
+                    <li class="fn">Sam Ritchie</li>
+                    <li>Github - S1M1S</li>
+                    <li class="email"><a
+                            href="mailto:web-design@manyhatsstudio.com.au">web-design@manyhatsstudio.com.au</a></li>
                 </ul>
             </article>
-        </section>
-    </div>
+        </div>
+    </section>
 {% endblock %}

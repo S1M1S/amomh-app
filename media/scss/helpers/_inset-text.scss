@@ -9,7 +9,7 @@
   &::after { top: 3px; left: 2px; }
 }
 @mixin inset-text-simple {
-  text-shadow:
-  -1px -1px 0 #000,  // top 'edge'
-  1px 1px 0 #FFF;  // bottom 'edge'
+  @include text-shadow(
+          0 -1px 0 rgba(0, 0, 0, .6), // top 'edge' 0 1px 0 #FFF, // bottom 'edge' 0 0 50px rgba(0, 0, 0, .35) // area darken
+  )
 }

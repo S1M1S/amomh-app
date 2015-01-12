@@ -3,14 +3,20 @@
 {% block content %}
     <header class="small-12 columns no-margin-collapse">
         <h1>Portfolio</h1>
-        <aside class="right"><p><em>(Websites in chronological order, latest at top)</em></p></aside>
+        <aside class="right">
+            <p><em>
+                <small>(Websites in chronological order, latest at top)</small>
+            </em></p>
+        </aside>
     </header>
+    <hr>
     <section class="small-12 columns">
         <ul class="portfolio-block-list">
             <li>
                 <a href="http://www.manyhatsstudio.com.au" title="Click to visit!">
                     <header><h3>Many Hats Studio</h3></header>
-                    <figure><img title="Many Hats Studio Thumbnail" class="thumbnail" src=http://placehold.it/400x300"></figure>
+                    <figure><img title="Many Hats Studio Thumbnail" class="thumbnail" src=http://placehold.it/400x300">
+                    </figure>
                     <div class="table-container">
                         <table>
                             <tbody>
@@ -44,7 +50,9 @@
                             </tr>
                             <tr>
                                 <th>Systems:</th>
-                                <td>Users pay subscription or listing fee to display bikes on website. Pages are dynamically generated depending on content submitted by users.</td>
+                                <td>Users pay subscription or listing fee to display bikes on website. Pages are
+                                    dynamically generated depending on content submitted by users.
+                                </td>
                             </tr>
                             <tr>
                                 <th>Team:</th>
@@ -58,7 +66,8 @@
             <li>
                 <a href="http://www.comeparkatmine.com" title="Click to visit!">
                     <header><h3>Come Park at Mine</h3></header>
-                    <figure><img title="Come Park at Mine Thumbnail" class="thumbnail" src=http://placehold.it/400x300"></figure>
+                    <figure><img title="Come Park at Mine Thumbnail" class="thumbnail" src=http://placehold.it/400x300">
+                    </figure>
                     <div class="table-container">
                         <table>
                             <tbody>
@@ -68,7 +77,10 @@
                             </tr>
                             <tr>
                                 <th>Systems:</th>
-                                <td>Users pay subscription fee to display parking spot on website. Browsing users are able to find parking spots close to their destination using the embedded interactive map and filter spots by date available.</td>
+                                <td>Users pay subscription fee to display parking spot on website. Browsing users are
+                                    able to find parking spots close to their destination using the embedded interactive
+                                    map and filter spots by date available.
+                                </td>
                             </tr>
                             <tr>
                                 <th>Team:</th>
@@ -82,7 +94,8 @@
             <li>
                 <a href="http://www.petnutritioncentre.com.au" title="Click to visit!">
                     <header><h3>Pet Nutrition Centre</h3></header>
-                    <figure><img title="Pet Nutrition Centre Thumbnail" class="thumbnail" src=http://placehold.it/400x300"></figure>
+                    <figure><img title="Pet Nutrition Centre Thumbnail" class="thumbnail"
+                                 src=http://placehold.it/400x300"></figure>
                     <div class="table-container">
                         <table>
                             <tbody>
@@ -106,7 +119,8 @@
             <li>
                 <a href="http://www.chewchew.com.au" title="Click to visit!">
                     <header><h3>Chew Chew Pet Restaurant</h3></header>
-                    <figure><img title="Chew Chew Thumbnail" class="thumbnail" src=http://placehold.it/400x300"></figure>
+                    <figure><img title="Chew Chew Thumbnail" class="thumbnail" src=http://placehold.it/400x300">
+                    </figure>
                     <div class="table-container">
                         <table>
                             <tbody>
@@ -121,7 +135,8 @@
                             <tr>
                                 <th>Team:</th>
                                 <td>
-                                    Adobe Business Catalyst - I inherited this website and substantially redesigned it<br>
+                                    Adobe Business Catalyst - I inherited this website and substantially redesigned
+                                    it<br>
                                     Newsletter is designed and written weekly by me
                                 </td>
                             </tr>
@@ -148,10 +163,10 @@
                 $header.find("h3").removeClass("v-align-middle");
             }
         }
-        $($portfolioImg).load(function() {
+        $($portfolioImg).load(function () {
             vAlignHeaders($(this))
         });
-        $window.resize(function() {
+        $window.resize(function () {
             vAlignHeaders($portfolioImg)
         });
     </script>

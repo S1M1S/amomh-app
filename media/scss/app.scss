@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import "compass";
 
 // Or selectively include components
 // @import
@@ -43,7 +44,6 @@
   "helpers/dimensions",
   "helpers/inset-text",
   "helpers/text-wrap",
-  "helpers/margin-collapse",
   "helpers/align";
 
 @import
