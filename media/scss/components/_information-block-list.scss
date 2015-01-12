@@ -29,6 +29,8 @@
     }
     h3 {
       text-align: center;
+      color: #CCC;
+      @include inset-text-simple;
     }
   }
   figure {
@@ -48,5 +50,29 @@
         margin-bottom: 0;
       }
     }
+  }
+}
+.quote-block-list {
+  @extend .information-block-list;
+  div { @include box-shadow(0 15px 10px -10px rgba(0,0,0,.4)); }
+  header {
+    padding: 1.25rem .75rem;
+    margin-bottom: 0;
+    text-align: center;
+    @include border-top-radius(5px);
+    border: 1px solid $gainsboro;
+    border-bottom-width: 0;
+    background: #EFEFEF;
+    @include box-shadow(0 0 3px rgba(0,0,0,.06) inset);
+    h3 {
+      margin: 0;
+      color: #CCC;
+      @include inset-text-simple;
+    }
+  }
+  a.button {
+    margin-bottom: 0;
+    margin-top: 1.25rem;
+    vertical-align: bottom;
   }
 }
