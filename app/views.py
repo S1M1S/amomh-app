@@ -1,4 +1,6 @@
 from bottle import TEMPLATE_PATH, route, static_file, jinja2_template as template
+from invoices import invoices
+
 
 TEMPLATE_PATH.append('./app/templates')
 
@@ -6,43 +8,47 @@ TEMPLATE_PATH.append('./app/templates')
 @route('/')
 @route('/landing')
 def home():
-    return template('landing.html')
+    return template ('under-construction.html')
+    #  TODO: return template('landing.html')
 
 
 @route('/website-design/information')
-def website_design():
+def wd_info():
     return template('website-design/information.html')
 
 
 @route('/website-design/portfolio')
-def website_design():
+def wd_port():
     return template('website-design/portfolio.html')
 
 
 @route('/website-design/quote-estimates')
-def website_design():
+def wd_quotes():
     return template('website-design/quote-estimates.html')
 
 
 @route('/website-design/contact-me')
-def website_design():
+def wd_contact():
     return template('website-design/contact-me.html')
 
 
 @route('/internet-radio/information')
-def website_design():
+def ir_info():
     return template('internet-radio/information.html')
 
 
 @route('/internet-radio/listen')
-def website_design():
+def ir_listen():
     return template('internet-radio/listen.html')
 
 
 @route('/music-production/information')
-def website_design():
+def mp_info():
     return template('music-production/information.html')
 
+@route('/invoices')
+def invoice():
+    return template('email/invoice/invoice-base.html', invoices=invoices)
 
 @route('/media/<path:path>')
 def static_media(path):
