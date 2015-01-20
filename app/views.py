@@ -1,8 +1,5 @@
 from bottle import TEMPLATE_PATH, route, static_file, jinja2_template as template
-try:
-    from invoices import invoices
-except ImportError:
-    invoices = 0
+# from invoices import invoices
 
 TEMPLATE_PATH.append('./app/templates')
 
@@ -48,9 +45,9 @@ def ir_listen():
 def mp_info():
     return template('music-production/information.html')
 
-@route('/invoices')
-def invoice():
-    return template('email/invoice/invoice-base.html', invoices=invoices)
+# @route('/invoices')
+# def invoice():
+#     return template('email/invoice/invoice-base.html', invoices=invoices)
 
 @route('/media/<path:path>')
 def static_media(path):
