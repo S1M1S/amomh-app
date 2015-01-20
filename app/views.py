@@ -1,6 +1,8 @@
 from bottle import TEMPLATE_PATH, route, static_file, jinja2_template as template
-from invoices import invoices
-
+try:
+    from invoices import invoices
+except ImportError:
+    invoices = 0
 
 TEMPLATE_PATH.append('./app/templates')
 
